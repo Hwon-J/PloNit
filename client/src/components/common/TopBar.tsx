@@ -1,5 +1,5 @@
 import React from "react";
-import style from "styles/css/TopBar.module.css";
+import style from "styles/css/Common/TopBar.module.css";
 import { useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
@@ -11,7 +11,7 @@ export const LogoTopBar = () => {
   );
 };
 
-export const BasicTopbar = ({ text }: { text: string }) => {
+export const BasicTopBar = ({ text }: { text: string }) => {
   return (
     <div className={style.basicTopbar}>
       <div className={style.title_name}>{text}</div>
@@ -19,7 +19,7 @@ export const BasicTopbar = ({ text }: { text: string }) => {
   );
 };
 
-export const BackTopbar = ({ text }: { text: string }) => {
+export const BackTopBar = ({ text }: { text: string }) => {
   const navigate = useNavigate();
 
   const goBackHandler = () => {
